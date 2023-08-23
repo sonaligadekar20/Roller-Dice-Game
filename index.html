@@ -18,9 +18,45 @@
         
         </div>
 
-      
-
     </div>
+    <script>
+        const diceImg = document.getElementById("dice");
+
+        function rollDice()
+        {
+            const min = 1;
+            const max = 7;
+
+            const randomNumber= Math.floor(Math.random() * (max - min)) + min;
+            
+            switch (randomNumber)
+            {
+                case 1:
+                diceImg.src = "dice1.png";
+                break;
+
+                case 2:
+                diceImg.src = "dice2.png";
+                break;
+
+                case 3:
+                diceImg.src = "dice3.png";
+                break;
+
+                case 4:
+                diceImg.src = "dice4.png";
+                break;
+
+                case 5:
+                diceImg.src = "dice5.png";
+                break;
+
+                case 6:
+                diceImg.src = "dice6.png";
+
+            }
+        }
+     </script>
     
     
 </body>
